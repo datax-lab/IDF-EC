@@ -1,0 +1,238 @@
+Disabling PyTorch because PyTorch >= 2.1 is required but found 1.12.1+cu116
+None of PyTorch, TensorFlow >= 2.0, or Flax have been found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+output dims : 7, 73, 267 ,4020
+output dims sum : 4367
+[8.65e-05, 3e-07, 34, 15, 50]
+EXP : 7
+Learning rate : 8.65e-05
+/home/jeons0/miniconda3/envs/ECPICK/lib/python3.9/site-packages/lightning_fabric/plugins/environments/slurm.py:166: PossibleUserWarning: The `srun` command is available on your system but is not used. HINT: If your intention is to run Lightning on SLURM, prepend your python command with `srun` like so: srun python /home/jeons0/Stacking/hitec_train.py ...
+  rank_zero_warn(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+Dataset are loading
+234460
+Dataset loading done
+Training start
+/home/jeons0/miniconda3/envs/ECPICK/lib/python3.9/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:612: UserWarning: Checkpoint directory /home/jeons0/Stacking/base_learners/HIT-EC_models/EXP7 exists and is not empty.
+  rank_zero_warn(f"Checkpoint directory {dirpath} exists and is not empty.")
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [6]
+
+  | Name           | Type        | Params
+-----------------------------------------------
+0 | model          | Transformer | 59.4 M
+1 | train_f1_micro | F1Score     | 0     
+2 | val_f1_micro   | F1Score     | 0     
+3 | bce_loss       | BCELoss     | 0     
+-----------------------------------------------
+59.4 M    Trainable params
+0         Non-trainable params
+59.4 M    Total params
+237.443   Total estimated model params size (MB)
+/home/jeons0/miniconda3/envs/ECPICK/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:224: PossibleUserWarning: The dataloader, train_dataloader, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 32 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+  rank_zero_warn(
+/home/jeons0/miniconda3/envs/ECPICK/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:224: PossibleUserWarning: The dataloader, val_dataloader 0, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 32 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+  rank_zero_warn(
+/home/jeons0/miniconda3/envs/ECPICK/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 0 - Validation Loss : 0.0009 | valid micro f1: 0.5978 | valid macro f1: 0.2411
+Epoch 0 - Train Loss : 0.0016 | Train micro f1: 0.2353 | Train macro f1: 0.0716
+/home/jeons0/miniconda3/envs/ECPICK/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 1 - Validation Loss : 0.0007 | valid micro f1: 0.6970 | valid macro f1: 0.3800
+Epoch 1 - Train Loss : 0.0008 | Train micro f1: 0.6368 | Train macro f1: 0.3122
+/home/jeons0/miniconda3/envs/ECPICK/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 2 - Validation Loss : 0.0006 | valid micro f1: 0.7271 | valid macro f1: 0.4599
+Epoch 2 - Train Loss : 0.0007 | Train micro f1: 0.6891 | Train macro f1: 0.4164
+/home/jeons0/miniconda3/envs/ECPICK/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 3 - Validation Loss : 0.0006 | valid micro f1: 0.7479 | valid macro f1: 0.4942
+Epoch 3 - Train Loss : 0.0006 | Train micro f1: 0.7169 | Train macro f1: 0.4785
+/home/jeons0/miniconda3/envs/ECPICK/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 4 - Validation Loss : 0.0006 | valid micro f1: 0.7612 | valid macro f1: 0.5371
+Epoch 4 - Train Loss : 0.0005 | Train micro f1: 0.7358 | Train macro f1: 0.5179
+/home/jeons0/miniconda3/envs/ECPICK/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 5 - Validation Loss : 0.0006 | valid micro f1: 0.7767 | valid macro f1: 0.5784
+Epoch 5 - Train Loss : 0.0009 | Train micro f1: 0.7443 | Train macro f1: 0.5333
+/home/jeons0/miniconda3/envs/ECPICK/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 6 - Validation Loss : 0.0006 | valid micro f1: 0.7730 | valid macro f1: 0.5704
+Epoch 6 - Train Loss : 0.0005 | Train micro f1: 0.7654 | Train macro f1: 0.5822
+/home/jeons0/miniconda3/envs/ECPICK/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 7 - Validation Loss : 0.0006 | valid micro f1: 0.7840 | valid macro f1: 0.5866
+Epoch 7 - Train Loss : 0.0004 | Train micro f1: 0.7752 | Train macro f1: 0.6055
+/home/jeons0/miniconda3/envs/ECPICK/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 8 - Validation Loss : 0.0006 | valid micro f1: 0.7886 | valid macro f1: 0.6045
+Epoch 8 - Train Loss : 0.0004 | Train micro f1: 0.7861 | Train macro f1: 0.6251
+/home/jeons0/miniconda3/envs/ECPICK/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 9 - Validation Loss : 0.0006 | valid micro f1: 0.7937 | valid macro f1: 0.6386
+Epoch 9 - Train Loss : 0.0004 | Train micro f1: 0.7962 | Train macro f1: 0.6503
+/home/jeons0/miniconda3/envs/ECPICK/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 10 - Validation Loss : 0.0006 | valid micro f1: 0.7985 | valid macro f1: 0.6531
+Epoch 10 - Train Loss : 0.0004 | Train micro f1: 0.7994 | Train macro f1: 0.6364
+/home/jeons0/miniconda3/envs/ECPICK/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 11 - Validation Loss : 0.0006 | valid micro f1: 0.7887 | valid macro f1: 0.6016
+Epoch 11 - Train Loss : 0.0003 | Train micro f1: 0.8103 | Train macro f1: 0.6750
+/home/jeons0/miniconda3/envs/ECPICK/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 12 - Validation Loss : 0.0006 | valid micro f1: 0.7994 | valid macro f1: 0.6411
+Epoch 12 - Train Loss : 0.0003 | Train micro f1: 0.8217 | Train macro f1: 0.6946
+/home/jeons0/miniconda3/envs/ECPICK/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 13 - Validation Loss : 0.0006 | valid micro f1: 0.7975 | valid macro f1: 0.6302
+Epoch 13 - Train Loss : 0.0003 | Train micro f1: 0.8291 | Train macro f1: 0.7077
+/home/jeons0/miniconda3/envs/ECPICK/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 14 - Validation Loss : 0.0006 | valid micro f1: 0.8086 | valid macro f1: 0.6706
+Epoch 14 - Train Loss : 0.0003 | Train micro f1: 0.8365 | Train macro f1: 0.7210
+/home/jeons0/miniconda3/envs/ECPICK/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 15 - Validation Loss : 0.0006 | valid micro f1: 0.8117 | valid macro f1: 0.6733
+Epoch 15 - Train Loss : 0.0003 | Train micro f1: 0.8465 | Train macro f1: 0.7419
+/home/jeons0/miniconda3/envs/ECPICK/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 16 - Validation Loss : 0.0006 | valid micro f1: 0.8076 | valid macro f1: 0.6788
+Epoch 16 - Train Loss : 0.0003 | Train micro f1: 0.8505 | Train macro f1: 0.7425
+/home/jeons0/miniconda3/envs/ECPICK/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 17 - Validation Loss : 0.0006 | valid micro f1: 0.7980 | valid macro f1: 0.6420
+Epoch 17 - Train Loss : 0.0003 | Train micro f1: 0.8601 | Train macro f1: 0.7635
+/home/jeons0/miniconda3/envs/ECPICK/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 18 - Validation Loss : 0.0007 | valid micro f1: 0.8132 | valid macro f1: 0.6749
+Epoch 18 - Train Loss : 0.0002 | Train micro f1: 0.8656 | Train macro f1: 0.7671
+/home/jeons0/miniconda3/envs/ECPICK/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 19 - Validation Loss : 0.0007 | valid micro f1: 0.8122 | valid macro f1: 0.6769
+Epoch 19 - Train Loss : 0.0002 | Train micro f1: 0.8721 | Train macro f1: 0.7790
+/home/jeons0/miniconda3/envs/ECPICK/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 20 - Validation Loss : 0.0006 | valid micro f1: 0.8134 | valid macro f1: 0.6883
+Epoch 20 - Train Loss : 0.0002 | Train micro f1: 0.8790 | Train macro f1: 0.7901
+/home/jeons0/miniconda3/envs/ECPICK/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 21 - Validation Loss : 0.0007 | valid micro f1: 0.8156 | valid macro f1: 0.7034
+Epoch 21 - Train Loss : 0.0002 | Train micro f1: 0.8821 | Train macro f1: 0.7891
+/home/jeons0/miniconda3/envs/ECPICK/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 22 - Validation Loss : 0.0007 | valid micro f1: 0.8170 | valid macro f1: 0.6930
+Epoch 22 - Train Loss : 0.0002 | Train micro f1: 0.8880 | Train macro f1: 0.8021
+/home/jeons0/miniconda3/envs/ECPICK/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 23 - Validation Loss : 0.0007 | valid micro f1: 0.8179 | valid macro f1: 0.7000
+Epoch 23 - Train Loss : 0.0002 | Train micro f1: 0.8925 | Train macro f1: 0.8056
+/home/jeons0/miniconda3/envs/ECPICK/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 24 - Validation Loss : 0.0007 | valid micro f1: 0.8148 | valid macro f1: 0.6969
+Epoch 24 - Train Loss : 0.0002 | Train micro f1: 0.8986 | Train macro f1: 0.8214
+/home/jeons0/miniconda3/envs/ECPICK/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 25 - Validation Loss : 0.0007 | valid micro f1: 0.8184 | valid macro f1: 0.6997
+Epoch 25 - Train Loss : 0.0002 | Train micro f1: 0.9009 | Train macro f1: 0.8194
+/home/jeons0/miniconda3/envs/ECPICK/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 26 - Validation Loss : 0.0007 | valid micro f1: 0.8193 | valid macro f1: 0.7076
+Epoch 26 - Train Loss : 0.0002 | Train micro f1: 0.9060 | Train macro f1: 0.8311
+/home/jeons0/miniconda3/envs/ECPICK/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 27 - Validation Loss : 0.0007 | valid micro f1: 0.8202 | valid macro f1: 0.7097
+Epoch 27 - Train Loss : 0.0002 | Train micro f1: 0.9088 | Train macro f1: 0.8294
+/home/jeons0/miniconda3/envs/ECPICK/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 28 - Validation Loss : 0.0007 | valid micro f1: 0.8213 | valid macro f1: 0.7131
+Epoch 28 - Train Loss : 0.0002 | Train micro f1: 0.9138 | Train macro f1: 0.8368
+/home/jeons0/miniconda3/envs/ECPICK/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 29 - Validation Loss : 0.0007 | valid micro f1: 0.8180 | valid macro f1: 0.6940
+Epoch 29 - Train Loss : 0.0002 | Train micro f1: 0.9184 | Train macro f1: 0.8473
+/home/jeons0/miniconda3/envs/ECPICK/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 30 - Validation Loss : 0.0007 | valid micro f1: 0.8222 | valid macro f1: 0.7115
+Epoch 30 - Train Loss : 0.0002 | Train micro f1: 0.9204 | Train macro f1: 0.8464
+/home/jeons0/miniconda3/envs/ECPICK/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 31 - Validation Loss : 0.0007 | valid micro f1: 0.8223 | valid macro f1: 0.7143
+Epoch 31 - Train Loss : 0.0002 | Train micro f1: 0.9245 | Train macro f1: 0.8512
+/home/jeons0/miniconda3/envs/ECPICK/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 32 - Validation Loss : 0.0007 | valid micro f1: 0.8211 | valid macro f1: 0.7074
+Epoch 32 - Train Loss : 0.0001 | Train micro f1: 0.9276 | Train macro f1: 0.8557
+Swapping scheduler `MultiplicativeLR` for `SWALR`
+/home/jeons0/miniconda3/envs/ECPICK/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 33 - Validation Loss : 0.0007 | valid micro f1: 0.8220 | valid macro f1: 0.7114
+Epoch 33 - Train Loss : 0.0001 | Train micro f1: 0.9298 | Train macro f1: 0.8593
+/home/jeons0/miniconda3/envs/ECPICK/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 34 - Validation Loss : 0.0007 | valid micro f1: 0.8224 | valid macro f1: 0.7159
+Epoch 34 - Train Loss : 0.0001 | Train micro f1: 0.9298 | Train macro f1: 0.8521
+/home/jeons0/miniconda3/envs/ECPICK/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 35 - Validation Loss : 0.0007 | valid micro f1: 0.8237 | valid macro f1: 0.7194
+Epoch 35 - Train Loss : 0.0001 | Train micro f1: 0.9325 | Train macro f1: 0.8577
+/home/jeons0/miniconda3/envs/ECPICK/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 36 - Validation Loss : 0.0008 | valid micro f1: 0.8248 | valid macro f1: 0.7092
+Epoch 36 - Train Loss : 0.0001 | Train micro f1: 0.9354 | Train macro f1: 0.8667
+/home/jeons0/miniconda3/envs/ECPICK/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 37 - Validation Loss : 0.0008 | valid micro f1: 0.8241 | valid macro f1: 0.7087
+Epoch 37 - Train Loss : 0.0001 | Train micro f1: 0.9370 | Train macro f1: 0.8647
+/home/jeons0/miniconda3/envs/ECPICK/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 38 - Validation Loss : 0.0008 | valid micro f1: 0.8232 | valid macro f1: 0.7038
+Epoch 38 - Train Loss : 0.0001 | Train micro f1: 0.9405 | Train macro f1: 0.8709
+/home/jeons0/miniconda3/envs/ECPICK/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 39 - Validation Loss : 0.0008 | valid micro f1: 0.8237 | valid macro f1: 0.7152
+Epoch 39 - Train Loss : 0.0001 | Train micro f1: 0.9426 | Train macro f1: 0.8753
+/home/jeons0/miniconda3/envs/ECPICK/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 40 - Validation Loss : 0.0008 | valid micro f1: 0.8254 | valid macro f1: 0.7131
+Epoch 40 - Train Loss : 0.0001 | Train micro f1: 0.9459 | Train macro f1: 0.8810
+/home/jeons0/miniconda3/envs/ECPICK/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 41 - Validation Loss : 0.0008 | valid micro f1: 0.8265 | valid macro f1: 0.7225
+Epoch 41 - Train Loss : 0.0001 | Train micro f1: 0.9460 | Train macro f1: 0.8710
+/home/jeons0/miniconda3/envs/ECPICK/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 42 - Validation Loss : 0.0008 | valid micro f1: 0.8273 | valid macro f1: 0.7225
+Epoch 42 - Train Loss : 0.0001 | Train micro f1: 0.9515 | Train macro f1: 0.8918
+/home/jeons0/miniconda3/envs/ECPICK/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 43 - Validation Loss : 0.0008 | valid micro f1: 0.8278 | valid macro f1: 0.7239
+Epoch 43 - Train Loss : 0.0001 | Train micro f1: 0.9542 | Train macro f1: 0.9003
+/home/jeons0/miniconda3/envs/ECPICK/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 44 - Validation Loss : 0.0008 | valid micro f1: 0.8285 | valid macro f1: 0.7246
+Epoch 44 - Train Loss : 0.0001 | Train micro f1: 0.9562 | Train macro f1: 0.9023
+/home/jeons0/miniconda3/envs/ECPICK/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 45 - Validation Loss : 0.0008 | valid micro f1: 0.8289 | valid macro f1: 0.7225
+Epoch 45 - Train Loss : 0.0001 | Train micro f1: 0.9583 | Train macro f1: 0.9077
+/home/jeons0/miniconda3/envs/ECPICK/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 46 - Validation Loss : 0.0008 | valid micro f1: 0.8290 | valid macro f1: 0.7251
+Epoch 46 - Train Loss : 0.0001 | Train micro f1: 0.9588 | Train macro f1: 0.9084
+/home/jeons0/miniconda3/envs/ECPICK/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 47 - Validation Loss : 0.0008 | valid micro f1: 0.8291 | valid macro f1: 0.7250
+Epoch 47 - Train Loss : 0.0001 | Train micro f1: 0.9602 | Train macro f1: 0.9102
+/home/jeons0/miniconda3/envs/ECPICK/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 48 - Validation Loss : 0.0008 | valid micro f1: 0.8290 | valid macro f1: 0.7234
+Epoch 48 - Train Loss : 0.0001 | Train micro f1: 0.9602 | Train macro f1: 0.9106
+/home/jeons0/miniconda3/envs/ECPICK/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Epoch 49 - Validation Loss : 0.0008 | valid micro f1: 0.8291 | valid macro f1: 0.7246
+Epoch 49 - Train Loss : 0.0001 | Train micro f1: 0.9598 | Train macro f1: 0.9095
+`Trainer.fit` stopped: `max_epochs=50` reached.
