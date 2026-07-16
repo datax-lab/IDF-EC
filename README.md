@@ -54,6 +54,14 @@ The website allows you to:
 3. Train HIT-EC : [HIT-EC](https://github.com/datax-lab/HIT-EC)
 
 4. Train IDF-EC
+```
+python train_idfec.py --gate False
+```
+Choose the best model to train the dynamic fusion gate.
+```
+python train_idfec.py --gate True --model your_model
+```
+
 
 ## 🚀 Quick Demo
 
