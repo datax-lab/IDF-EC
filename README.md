@@ -4,6 +4,8 @@
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 ![Paper](https://img.shields.io/badge/17th%20ACM%20BCB%20-Accepted-orange.svg)
 
+This is the official repository for the paper [IDF-EC: Interpretable Dynamic Feature–Logit Fusion for Enzyme Commission](https://dl.acm.org/doi/10.1145/3807503.3819449).
+
 ---
 
 ## 📖 Abstract
